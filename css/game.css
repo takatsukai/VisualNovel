@@ -1,11 +1,9 @@
 body
 {
 	background-color:rgb(110,110,110);
-	background-image:url('../img/stars.gif');
+	background-image:url('../img/stars.gif'); /*set the background as star gif*/
 	background-size:100% 100%;
-  	font-family: 'Trebuchet MS', sans-serif;
-
-  
+  font-family: 'Trebuchet MS', sans-serif;
 }
 #container
 {
@@ -20,14 +18,14 @@ body
 	overflow:hidden;
 	background:black;
 }
-h1
+h1 /*title / header designs*/
 {
 	font-size:48px;
-	font-family:  'Poiret One', sans-serif;;
+	font-family:  'Poiret One', sans-serif;; 
 	padding-top: 30px;
 	text-align:center;
 	color:white;
-	text-shadow:0px 0px 50px pink;
+	text-shadow:0px 0px 50px pink; 
 }
 #sceneContent
 {
@@ -36,7 +34,7 @@ h1
 	height: 100%;
   
 }
-.character
+.character /*character dimensions*/
 {
 	position:absolute;
 	width:400px;

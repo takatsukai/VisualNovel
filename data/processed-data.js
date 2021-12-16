@@ -1,4 +1,4 @@
-var characters = 
+var characters = /* create multiple characters and connect them to multiple photos/sprites */
 {
   "default":{
     "poses":{
@@ -25,7 +25,7 @@ var characters =
     "name":"Aiko"
   }
 }; 
- var places = 
+ var places = /*connect scenery to images*/
 {
   "black" : {
 		"name":"???",
@@ -62,11 +62,11 @@ var characters =
     }
   
 };
- var story = 
+ var story = /*all routes seperated in different sections, need key to enter true escape route */
 [
     {  "title": "Start", 
      "tags": "", 
-      "body": "<<string key false>><<place home>>\n{{lumeria,happy}} Down for another round of Bloons TD6?\n{{aiko}}Hell yeah!\n{{aiko}} What map should we pick?\n[[Let’s do the forest map.|transition_2]]\n[[Let’s do the ocean map.|transition_1]]",   "position": { 
+      "body": "<<place home>>\n{{lumeria,happy}} Down for another round of Bloons TD6?\n{{aiko}}Hell yeah!\n{{aiko}} What map should we pick?\n[[Let’s do the forest map.|transition_2]]\n[[Let’s do the ocean map.|transition_1]]",   "position": { 
    "x": 615,
    "y": 109 }, 
   "colorID": 0 
@@ -75,8 +75,7 @@ var characters =
   
   { "title": "transition_1", 
   "tags": "", 
-   "body": "<<place black>>\n Suddenly, the light flickers out. \n {{lumeria, confused}} ...Huh, what’s…happening…?\n {{lumeria, confused}}[[Where are we?|forest]]", 
-  "position": { 
+   "body": "<<place black>>\n Suddenly, the light flickers out. \n {{lumeria, confused}} ...Huh, what’s…happening…?\n {{lumeria, confused}}[[Where are we?|ocean]]",   "position": { 
   "x": 928, 
   "y": 324 }, 
    "colorID": 0 
@@ -93,7 +92,7 @@ var characters =
 
   { "title": "ocean", 
   "tags": "", 
-   "body": "<<place ocean>>\n {{aiko}} ...\n[[...]]\n{{aiko}} …It’s beautiful! \n[[Let’s swim in the water!|bad_end]]\n[[What’s that path ahead?|forest]]", 
+   "body": "<<place ocean>>\n {{aiko}} ...\n{{aiko}} …It’s beautiful! \n[[Let’s swim in the water!|bad_end]]\n[[What’s that path ahead?|forest]]", 
   "position": { 
   "x": 928, 
   "y": 324 }, 
@@ -123,7 +122,7 @@ var characters =
   	{
 		"title": "item",
 		"tags": "",
-		"body": "<<string key true>>\n{{lumeria, confused}} What's this...?\n{{lumeria}} A key?\n{{aiko}} This might be useful.\n[[{{aiko}} Anyway... let's keep going!|forest_2]]",
+		"body": "<<string key true>>\n{{lumeria, confused}} What's this...?\n{{lumeria}} A key?\n{{aiko}} This might be useful.\n[[{{aiko}} Anyway... let's keep going!|forest_2]]", /*key becomes true, game registers you have key now.*/
 		"position": {
 			"x": 374,
 			"y": 890
@@ -157,7 +156,7 @@ var characters =
 	{
 		"title": "final_room",
 		"tags": "",
-		"body": "<<place pink_room>> {{aiko, shocked}}...\n{{aiko,shocked}} Where are we...?\n{{lumeria,confused}} I have no idea. \n {{aiko,happy}} ...what's that over there? \n {{lumeria}} It's a gumball machine! \n [[{{aiko}} I have an idea...let's try using this key in that gumball machine. |good_end]] <<string key == true>> \n [[{{aiko}} I'm not sure what to do with it though...]] <<string key != true>>\n{{lumeria}}...?!\n[[{{aiko}} What's happening?! |bad_end]]",
+		"body": "<<place pink_room>> {{aiko, shocked}}...\n{{aiko,shocked}} Where are we...?\n{{lumeria,confused}} I have no idea. \n {{aiko,happy}} ...what's that over there? \n {{lumeria}} It's a gumball machine! \n [[{{aiko}} I have an idea...let's try using this key in that gumball machine. |good_end]] <<string key == true>> \n [[{{aiko}} I'm not sure what to do with it though...]] <<string key != true>>\n{{lumeria}}...?!\n[[{{aiko}} What's happening?! |bad_end]]", /* if have key good end, otherwise bad end */
 		"position": {
 			"x": 606,
 			"y": 1272

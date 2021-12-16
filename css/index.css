@@ -1,13 +1,13 @@
-body
+body 
 {
 	background-color:rgb(110,110,110);
-	background-image:url('../img/lumeria.gif');
+	background-image:url('../img/lumeria.gif'); /*set background as animation of lumeria*/
 	font-family: 'Trebuchet MS', sans-serif;
 	font-size: 5px;
 	background-size:100% 100%;
   
 }
-#container
+#container /* summary design */
 {
 	font-size:24px;
 	margin: 0 auto;
@@ -20,7 +20,7 @@ body
 	height:100%;
   
 }
-h1
+h1 /* title design */
 {
 	font-size:60px;
 	padding-top: 30px;
@@ -30,7 +30,7 @@ h1
   	font-family: 'Poiret One', sans-serif;
 
 }
-p
+p /*basic text font*/
 {
 	margin: 20px;
 	font-size: 20px;
@@ -39,7 +39,7 @@ a
 {
 	color:rgb(255, 247, 128);
 }
-a.button
+a.button /*button design*/
 {
 	font-size: 35px;
 	text-decoration: none;
@@ -51,7 +51,7 @@ a.button
 	border-radius:7px;
   background: rgba(25,25,112, 0.4);
 }
-a.button:hover
+a.button:hover /*turn background button lighter*/
 {
 	text-shadow:0px 0px 8px white;
 	background:rgba(151, 128, 255, 0.4);
@@ -63,13 +63,13 @@ ul
 	padding: 200px;
 	margin: 20px;
 }
-li
+li /*end credits list*/
 {
 	color:white;
 	margin: 10px;
 }		
 
-mark{
+mark{ /*highlight text to see better*/
  	color:white;
 
   background-color:rgba(25,25,112, 0.4);
