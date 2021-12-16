@@ -1,0 +1,11 @@
+{
+		"street" : {
+		"name":"The street",
+    	"image":"img/background.jpg"
+    },
+  
+    "forest" : {
+		"name":"The forest",
+    	"image":"img/purple.gif"
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "default":{
+    "poses":{
+    },
+    "name":"Narrator"
+  },
+
+  "lumeria":{
+    "poses":{
+      "confused":"img/character2_1.png",
+      "happy":"img/character2.png"
+    },
+    "name":"Lumeria"
+  },
+
+  "aiko":{
+    "poses":{
+      "default":"img/character1.png",
+      "happy":"img/character1.png"
+      "shocked":"img/character1_1.png"
+
+    },
+    "name":"Aiko"
+  }
+}

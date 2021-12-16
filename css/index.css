@@ -1,0 +1,76 @@
+body
+{
+	background-color:rgb(110,110,110);
+	background-image:url('../img/lumeria.gif');
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 5px;
+	background-size:100% 100%;
+  
+}
+#container
+{
+	font-size:24px;
+	margin: 0 auto;
+	padding:10px 50px;
+	width:800px;
+	position:relative;
+	text-align:center;
+  text-shadow:0px 0px 4px rgb(25,25,112);
+	color:rgb(240,248,255);
+	height:100%;
+  
+}
+h1
+{
+	font-size:60px;
+	padding-top: 30px;
+	text-align:center;
+	color:white;
+	text-shadow:1px 1px 20px rgb(25,25,112);
+  	font-family: 'Poiret One', sans-serif;
+
+}
+p
+{
+	margin: 20px;
+	font-size: 20px;
+}
+a
+{
+	color:rgb(255, 247, 128);
+}
+a.button
+{
+	font-size: 35px;
+	text-decoration: none;
+	color:white;
+	display:inline-block;
+	margin:20px auto;
+	padding:5px 40px;
+	border:2px solid white;
+	border-radius:7px;
+  background: rgba(25,25,112, 0.4);
+}
+a.button:hover
+{
+	text-shadow:0px 0px 8px white;
+	background:rgba(151, 128, 255, 0.4);
+}
+ul
+{
+	list-style-type:none;
+	font-size:18px;
+	padding: 200px;
+	margin: 20px;
+}
+li
+{
+	color:white;
+	margin: 10px;
+}		
+
+mark{
+ 	color:white;
+
+  background-color:rgba(25,25,112, 0.4);
+}

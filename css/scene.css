@@ -1,0 +1,44 @@
+.character
+{
+	position:absolute;
+	width:400px;
+	height:300px;
+	left:500px;
+	bottom:50px;
+	background-repeat:no-repeat;
+}
+
+#container[character="lumeria"] .character
+{
+	left:0px;
+}
+
+#container[character="aiko"] .character
+{
+	left:350px;
+}
+
+#container[character="default"] #characterName
+{
+	color:rgb(128, 232, 255);
+}
+#container[character="aiko"] #characterName
+{
+	color: hotpink;
+}
+#container[character="lumeria"] #characterName
+{
+	color:rgb(177,156,217);
+}
+#container[place="home"] #placeName
+{
+	color: lavender;
+}
+#container[place="ocean"] #placeName
+{
+	color: teal;
+}
+#container[place="forest"] #placeName
+{
+	color: peachpuff;
+}
